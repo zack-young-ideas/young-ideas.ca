@@ -5,8 +5,16 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
+
   <body>
-    {% include navigation.html %}
-    {{ content }}
+    {% include header.html %}
+
+    <main>
+      <div class="container-md">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
   </body>
 </html>

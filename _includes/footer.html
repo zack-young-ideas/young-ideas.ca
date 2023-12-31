@@ -1,0 +1,18 @@
+<div class="container-md">
+  <footer class="row justify-content-between pt-1 pb-1">
+    <div class="col">
+      <ul class="float-end nav nav-pills">
+        {% for item in site.data.navigation %}
+          <li class="nav-item">
+            <a
+              class="nav-link fw-bold ps-4"
+              href="{{ item.link }}"
+            >
+              {{ item.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </footer>
+</div>
