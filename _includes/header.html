@@ -1,21 +1,23 @@
-<div class="container-md">
-  <header class="row justify-content-between pt-1 pb-1">
-    <a class="col-4 mt-2" href="/">
-      <span id="logo"></span>
-    </a>
-    <div class="col-8">
-      <ul class="float-end nav nav-pills">
-        {% for item in site.data.navigation %}
-          <li class="nav-item">
-            <a
-              class="nav-link fw-bold ps-4"
-              href="{{ item.link }}"
-            >
-              {{ item.name }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
+<header>
+  <div class="container-md">
+    <div class="row justify-content-between pt-1 pb-1">
+      <a class="col-4 mt-2" href="/">
+        <span id="logo"></span>
+      </a>
+      <div class="col-8">
+        <ul class="float-end nav nav-pills">
+          {% for item in site.data.navigation %}
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold ps-4"
+                href="{{ item.link }}"
+              >
+                {{ item.name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
-  </header>
-</div>
+  </div>
+</header>
