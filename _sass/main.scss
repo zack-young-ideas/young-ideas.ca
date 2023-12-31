@@ -2,3 +2,12 @@
 @import 'bootstrap/bootstrap';
 @import 'components/header';
 @import 'components/footer';
+@import 'components/code';
+
+.post-image {
+  max-height: 20em;
+}
+
+.post-content {
+  margin-top: 2em;
+}

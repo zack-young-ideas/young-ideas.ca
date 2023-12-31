@@ -1,7 +1,15 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+<h1 class="my-3">{{ page.title }}</h1>
+<h2 class="fs-4 mb-4">{{ page.subtitle }}</h2>
+<p>
+  <span class="fw-bold">{{ page.author }}</span>
+  <span class="ms-5">{{ page.date | date: "%B %e, %Y" }}</span>
+</p>
 
-{{ content }}
+<img class="post-image" src="/assets/images/musk.png" alt="image" />
+
+<div class="post-content">
+  {{ content }}
+</div>
