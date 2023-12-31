@@ -1,0 +1,14 @@
+footer {
+  background-color: $gray-200;
+
+  ul.nav {
+    li.nav-item {
+      a.nav-link {
+        color: $gray-700;
+      }
+      a.nav-link:hover {
+        color: $primary;
+      }
+    }
+  }
+}
