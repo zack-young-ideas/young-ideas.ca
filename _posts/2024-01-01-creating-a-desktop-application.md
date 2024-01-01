@@ -1,9 +1,9 @@
 ---
 layout: post
 author: Zack Young
-title: Deploying To AWS
-subtitle: This is a subtitle. I believe it is appropriate to include a subtitle with every post.
-category: Cloud
+title: Creating A Desktop Application
+subtitle: In this article, we use ElectronJS to creat a desktop application to act as the user interface for our password manager.
+category: JavaScript
 image: mockup.jpg
 ---
 Aliquam venenatis est eu maximus congue. Curabitur suscipit porta

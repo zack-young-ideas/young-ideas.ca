@@ -1,0 +1,19 @@
+.preview {
+  max-width: 780px;
+
+  .preview-header {
+    color: $gray-900;
+    text-decoration: none;
+  }
+
+  img {
+    height: 18em;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .preview-link:hover {
+    color: $primary;
+    transition: color 0.15s ease-in-out;
+  }
+}
