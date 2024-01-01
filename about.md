@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Zack Young
+title: About | YoungIdeas
 ---
 # About page
 

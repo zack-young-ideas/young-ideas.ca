@@ -1,5 +1,35 @@
 ---
 layout: default
-title: Young Ideas
+title: Home | YoungIdeas
 ---
-<h1>{{ "Hello, World!" | downcase }}</h1>
+<div class="px-2 py-2">
+
+{% for post in site.posts %}
+  <div class="container-fluid preview">
+    <div class="col">
+      <div class="row">
+        <a class="preview-header" href="{{ post.url }}">
+          <h1 class="display-6 fw-bold mt-2">{{ post.title }}</h1>
+          <p class="fs-5">{{ post.subtitle }}</p>
+        </a>
+
+        <a class="image-link-container" href="{{ post.url }}">
+          <img
+            alt="image"
+            class="mb-3 post-image"
+            src="/assets/images/{{ post.image }}"
+          />
+        </a>
+
+        <a
+          class="border-bottom h4 pb-3 preview-link"
+          href="{{ post.url }}"
+        >
+          Read More
+        </a>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+</div>
