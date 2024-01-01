@@ -1,15 +1,33 @@
 ---
 layout: default
 ---
-<h1 class="my-3">{{ page.title }}</h1>
-<h2 class="fs-4 mb-4">{{ page.subtitle }}</h2>
-<p>
-  <span class="fw-bold">{{ page.author }}</span>
-  <span class="ms-5">{{ page.date | date: "%B %e, %Y" }}</span>
-</p>
 
-<img class="post-image" src="/assets/images/musk.png" alt="image" />
+<div class="article container-fluid px-3">
+  <div class="col">
+    <div class="row">
+      <h6 class="fw-bold mt-3">
+        <span class="border-3 border-bottom border-secondary">
+          {{ page.category }}
+        </span>
+      </h6>
+      <h1 class="display-4 fw-bold">{{ page.title }}</h1>
+      <p class="fs-5 mb-2">{{ page.subtitle }}</p>
+      <p>
+        <span class="fw-bold pe-1">{{ page.author }}</span>
+        |
+        <span class="fw-light ps-1">{{ page.date | date: "%B %e, %Y" }}</span>
+      </p>
 
-<div class="post-content">
-  {{ content }}
+      <img
+        alt="image"
+        class="mb-4 post-image"
+        src="/assets/images/musk.png"
+      />
+
+      <div class="article-text mb-5">
+        {{ content }}
+      </div>
+
+    </div>
+  </div>
 </div>
