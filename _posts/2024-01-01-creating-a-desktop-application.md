@@ -5,6 +5,7 @@ title: Creating A Desktop Application
 subtitle: In this article, we use ElectronJS to creat a desktop application to act as the user interface for our password manager.
 category: JavaScript
 image: mockup.jpg
+image-alt: Alder Password Manager
 ---
 Aliquam venenatis est eu maximus congue. Curabitur suscipit porta
 laoreet. Vestibulum sed massa quis dui imperdiet semper a eu mauris.

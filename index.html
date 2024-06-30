@@ -1,35 +1,29 @@
 ---
 layout: default
-title: Home | YoungIdeas
+title: Youngideas
 ---
 <div class="px-2 py-2">
 
-{% for post in site.posts %}
-  <div class="container-fluid preview">
-    <div class="col">
-      <div class="row">
-        <a class="preview-header" href="{{ post.url }}">
-          <h1 class="display-6 fw-bold mt-2">{{ post.title }}</h1>
-          <p class="fs-5">{{ post.subtitle }}</p>
-        </a>
-
-        <a class="image-link-container" href="{{ post.url }}">
-          <img
-            alt="image"
-            class="mb-3 post-image"
-            src="/assets/images/{{ post.image }}"
-          />
-        </a>
-
-        <a
-          class="border-bottom h4 pb-3 preview-link"
-          href="{{ post.url }}"
-        >
-          Read More
-        </a>
+  <div class="hero">
+    <div class="container col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-5 py-1">
+      <div class="col-12 col-md-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+          Zack Young
+        </h1>
+        <h2 class="h4 fw-bold text-primary">Software Developer</h2>
+        <p class="lead">
+          I create full-stack web applications and deploy them to
+          the cloud. I created this site to share some of my ideas
+          and teach others about web development. You'll find lots
+          of tutorials and how-to guides about creating and
+          deploying web applications.
+        </p>
+      </div>
+      <div class="col-12 col-md-6 text-center">
+        <img src="/assets/images/animation.png" alt="illustration" height="300"/>
       </div>
     </div>
   </div>
-{% endfor %}
 
 </div>

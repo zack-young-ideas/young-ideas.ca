@@ -4,7 +4,8 @@ author: Zack Young
 title: Deploying To AWS
 subtitle: This is a subtitle. I believe it is appropriate to include a subtitle with every post.
 category: Cloud
-image: mockup.jpg
+image: blog-post-image-django.jpg
+image-alt: Blog Post
 ---
 Aliquam venenatis est eu maximus congue. Curabitur suscipit porta
 laoreet. Vestibulum sed massa quis dui imperdiet semper a eu mauris.

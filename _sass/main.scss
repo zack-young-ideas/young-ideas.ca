@@ -1,7 +1,12 @@
 @import 'abstracts/variables';
 @import 'bootstrap/bootstrap';
 @import 'components/article';
+@import 'components/buttons';
 @import 'components/code';
 @import 'components/footer';
 @import 'components/header';
 @import 'components/preview';
+
+.contact-background {
+  background: no-repeat center/cover url('/assets/images/map.png');
+}
