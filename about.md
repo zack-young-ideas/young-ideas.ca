@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About | YoungIdeas
+title: About | Youngideas
 ---
 # About page
 
