@@ -1,0 +1,36 @@
+<section class="blog-summary mt-5">
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <h2 class="display-5 fw-bold">Blog</h2>
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a class="fs-5 nav-link p-0 mb-3" href="/blog.html">View all</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      {% for post in site.posts limit:3 %}
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column">
+            <p class="text-primary fs-6 fw-bold">{{ post.category }}</p>
+            <a
+              class="card-title h4 fw-bold text-decoration-none"
+              href="{{ post.url }}"
+            >{{ post.title }}</a>
+            <p class="card-text">{{ post.subtitle }}</p>
+            <p
+              class="fw-light fs-6 mt-auto"
+            >{{ post.date | date: "%B %d, %Y" }}</p>
+            <a class="align-self-end btn btn-primary me-auto" href="{{ post.url }}">Read More</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
