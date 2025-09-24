@@ -1,29 +1,72 @@
 ---
 layout: default
 title: Youngideas
+permalink: /
 ---
-<div class="px-2 py-2">
+<div class="main-background">
 
-  <div class="hero">
-    <div class="container col-xxl-8 px-4 py-5">
-    <div class="row align-items-center g-5 py-1">
-      <div class="col-12 col-md-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+  <div class="container p-4">
+    <div class="row align-items-center g-5">
+      <div class="col-12 col-md-6 mt-5 mt-md-0 pt-4 pt-md-0 text-center text-md-start">
+        <h1 class="display-1 fw-bold text-body-emphasis">
           Zack Young
         </h1>
-        <h2 class="h4 fw-bold text-primary">Software Developer</h2>
+        <h2
+          class="h4 fw-bold text-primary"
+        >Software Developer &amp; Cloud Architect</h2>
         <p class="lead">
-          I create full-stack web applications and deploy them to
-          the cloud. I created this site to share some of my ideas
-          and teach others about web development. You'll find lots
-          of tutorials and how-to guides about creating and
-          deploying web applications.
+          I'm a full-stack developer and cloud architect specializing in
+          AWS, JavaScript, and Python. I help businesses launch modern
+          apps that are scalable and secure.
         </p>
+        <a class="btn btn-lg btn-primary" href="">Let's Talk</a>
       </div>
       <div class="col-12 col-md-6 text-center">
-        <img src="/assets/images/animation-of-zack.png" alt="illustration" height="300"/>
+        <img src="/assets/images/picture-of-zack.png" alt="me" height="500"/>
       </div>
     </div>
   </div>
 
+</div>
+
+{% include blog_summary.html %}
+
+<div class="container mt-5 p-4">
+  <h3 class="display-5 fw-bold mt-2 mb-3">Featured
+    <span class="text-primary">Projects</span>
+  </h3>
+  <div class="row">
+    <div class="col-4">
+      <div class="border-0 card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Espresso</h5>
+          <p class="card-text">A lightweight CMS I wrote using ExpressJS.</p>
+          <a class="btn btn-primary" href="">Demo</a>
+          <a class="btn btn-secondary" href="">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="border-0 card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Mortgage Calculator</h5>
+          <p class="card-text">A mortgage calculator I wrote using React.</p>
+          <a class="btn btn-primary" href="">Demo</a>
+          <a class="btn btn-secondary" href="">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="border-0 card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">EazyBids</h5>
+          <p class="card-text">A React app that sorts and filters shifts.</p>
+          <a class="btn btn-primary" href="">Demo</a>
+          <a class="btn btn-secondary" href="">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
