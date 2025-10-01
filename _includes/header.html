@@ -1,20 +1,22 @@
-<header>
+<header class="border-bottom">
   <div class="container-xl">
     <div class="row justify-content-between pt-1">
-      <a class="col-4 mt-3" href="/">
-        <span id="logo"></span>
-      </a>
-      <div class="col-8">
+      <div class="col-2 mt-2">
+        <a href="/">
+          <span id="logo"></span>
+        </a>
+      </div>
+      <div class="col-10">
         <ul class="nav justify-content-end">
           {% for item in site.data.navigation %}
             <li class="nav-item">
               <a
                 {% if item.link == page.url %}
-                  class="border-4 border-bottom border-primary d-none d-md-flex nav-link fw-bold m-3 me-4 p-0 text-body"
+                  class="border-4 border-bottom border-primary d-none d-md-flex nav-link fw-bold m-2 me-5 p-0 text-body"
                 {% elsif item.link == '/contact.html' %}
-                  class="btn btn-primary d-none d-lg-flex ms-2 mt-2"
+                  class="btn btn-primary d-none d-md-flex ms-2"
                 {% else %}
-                  class="d-none d-md-flex nav-link fw-bold m-3 me-4 p-0"
+                  class="d-none d-md-flex nav-link fw-bold m-2 me-5 p-0"
                 {% endif %}
                 href="{{ item.link }}"
               >

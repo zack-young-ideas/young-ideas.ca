@@ -4,10 +4,36 @@ title: Blog | Youngideas
 ---
 <div class="px-2 py-2">
 
-{% for post in site.posts %}
   <div class="container-fluid preview">
-    <div class="col">
-      <div class="row">
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <h2 class="display-4 fw-bold">Blog</h2>
+        <p class="fs-5">Below, you'll find several articles that I've written about
+           JavaScript, Python, and AWS. Feel free to peruse.</p>
+      </div>
+    </div>
+
+    <div class="row py-3 pb-4">
+      <div class="col-0 col-sm-1">
+      </div>
+      <div class="col-9 col-sm-8">
+        <input
+          class="form-control"
+          id="blog-search"
+          placeholder="Search"
+          type="text"
+        />
+      </div>
+      <div class="col-2 col-sm-2">
+        <button class="btn btn-primary" id="search-button">Search</button>
+      </div>
+      <div class="col-0 col-sm-1">
+      </div>
+    </div>
+
+    {% for post in site.posts %}
+    <div data-uid="{{ post.uid }}" class="border-top row py-3">
+      <div class="col">
         <a class="preview-header" href="{{ post.url }}">
           <h1 class="display-6 fw-bold mt-2">{{ post.title }}</h1>
           <p class="fs-5">{{ post.subtitle }}</p>
@@ -22,14 +48,14 @@ title: Blog | Youngideas
         </a>
 
         <a
-          class="border-bottom h4 pb-3 preview-link"
+          class="h4 pb-3 preview-link"
           href="{{ post.url }}"
         >
           Read More
         </a>
       </div>
     </div>
+    {% endfor %}
   </div>
-{% endfor %}
 
 </div>
