@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Zack Young
+uid: 1
 title: Deploying To AWS
 subtitle: This is a subtitle. I believe it is appropriate to include a subtitle with every post.
 category: Cloud

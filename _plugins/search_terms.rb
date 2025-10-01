@@ -15,6 +15,7 @@ module Jekyll
       posts_data = site.posts.docs.map do |post|
         {
           "title"    => post.data['title'],
+          "uid"       => post.data['uid'],
           "subtitle" => post.data['subtitle'] || "",
           "date"     => post.date.strftime("%B %e, %Y"),
           "image"    => post.data['image'] || "",

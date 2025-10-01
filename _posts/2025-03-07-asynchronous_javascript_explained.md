@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Zack Young
+uid: 2
 title: Asynchronous JavaScript Explained
 subtitle: Learn how the JavaScript event loop works and master async programming.
 category: JavaScript
