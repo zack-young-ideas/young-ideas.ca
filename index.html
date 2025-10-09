@@ -7,66 +7,34 @@ permalink: /
 
   <div class="container p-4">
     <div class="row align-items-center g-5">
-      <div class="col-12 col-md-6 mt-5 mt-md-0 pt-4 pt-md-0 text-center text-md-start">
+      <div class="col-12 col-md-6 mt-5 mb-3 mt-lg-0 pt-4 pt-md-0 text-center text-md-start">
         <h1 class="display-1 fw-bold text-body-emphasis">
           Zack Young
         </h1>
         <h2
           class="h4 fw-bold text-primary"
-        >Software Developer &amp; Cloud Architect</h2>
+        >Software Engineer &amp; Cloud Architect</h2>
         <p class="lead">
           I'm a full-stack developer and cloud architect specializing in
-          AWS, JavaScript, and Python. I help businesses launch modern
-          apps that are scalable and secure.
+          JavaScript, Python, and AWS. I help businesses create modern
+          web applications that are fast, reliable, and secure.
         </p>
         <a class="btn btn-lg btn-primary" href="/contact.html">Contact Me</a>
       </div>
-      <div class="col-12 col-md-6 text-center">
-        <img src="/assets/images/picture-of-zack.png" alt="me" height="500"/>
+      <div class="col-12 col-md-6 mb-2 mt-4 text-center">
+        <img
+          alt="me"
+          class="image-of-me w-100"
+          src="/assets/images/picture-of-zack.png"
+        />
       </div>
     </div>
   </div>
 
 </div>
+
+{% include skills.html %}
 
 {% include blog_summary.html %}
 
-<div class="container mt-5 p-4">
-  <h3 class="display-5 fw-bold mt-2 mb-3">Featured
-    <span class="text-primary">Projects</span>
-  </h3>
-  <div class="row">
-    <div class="col-4">
-      <div class="border-0 card shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Espresso</h5>
-          <p class="card-text">A lightweight CMS I wrote using ExpressJS.</p>
-          <a class="btn btn-primary" href="">Demo</a>
-          <a class="btn btn-secondary" href="">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-4">
-      <div class="border-0 card shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">Mortgage Calculator</h5>
-          <p class="card-text">A mortgage calculator I wrote using React.</p>
-          <a class="btn btn-primary" href="">Demo</a>
-          <a class="btn btn-secondary" href="">GitHub</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-4">
-      <div class="border-0 card shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title fw-bold">EazyBids</h5>
-          <p class="card-text">A React app that sorts and filters shifts.</p>
-          <a class="btn btn-primary" href="">Demo</a>
-          <a class="btn btn-secondary" href="">GitHub</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{% include projects.html %}
