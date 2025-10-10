@@ -11,6 +11,37 @@ header {
       a.nav-link:hover {
         color: $primary;
       }
+
+      .hamburger {
+        display: inline-block;
+        cursor: pointer;
+
+        .bar1, .bar2, .bar3 {
+          width: 2em;
+          height: 0.34em;
+          background-color: $gray-700;
+          margin: 0.36em 0;
+          transition: 0.15s
+        }
+      }
+      .hamburger.change {
+        .bar1 {
+          transform: translate(0, 11px) rotate(-45deg);
+        }
+
+        .bar2 {
+          opacity: 0;
+        }
+
+        .bar3 {
+          transform: translate(0, -11px) rotate(45deg);
+        }
+      }
+      .hamburger:hover {
+        .bar1, .bar2, .bar3 {
+          background-color: $primary;
+        }
+      }
     }
   }
 }

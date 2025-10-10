@@ -1,6 +1,6 @@
 <section class="blog-summary my-5">
   <div class="container">
-    <div class="row">
+    <div class="row" data-aos="fade-up" data-aos-easing="ease">
       <div class="col">
         <div class="d-flex">
           <h2 class="display-5 fw-bold">Blog</h2>
@@ -17,7 +17,11 @@
 
     <div class="row">
       {% for post in site.posts limit:3 %}
-      <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
+      <div
+        class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0"
+        data-aos="fade-up"
+        data-aos-easing="ease"
+      >
         <div class="card h-100">
           <div class="card-body d-flex flex-column">
             <p
