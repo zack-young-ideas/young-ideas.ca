@@ -1,0 +1,20 @@
+<div id="sidebar-nav">
+  <ul class="nav nav-pills p-3 flex-column mb-auto">
+    {% for item in site.data.navigation %}
+    <li class="nav-item">
+      <a
+        {% if item.link == '/contact.html' %}
+          class="btn btn-primary float-end contact-btn d-flex d-md-none mt-2"
+        {% elsif item.link == page.url %}
+          class="border-4 border-bottom border-primary d-flex d-md-none float-end nav-link fw-bold mx-2 my-3 p-0 rounded-0 text-body"
+        {% else %}
+          class="d-flex d-md-none float-end nav-link fw-bold mx-2 my-3 p-0"
+        {% endif %}
+        href="{{ item.link }}"
+      >
+        {{ item.name }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

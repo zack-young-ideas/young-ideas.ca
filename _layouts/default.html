@@ -13,11 +13,13 @@
     {% include header.html %}
 
     <main>
+      {% include sidebar.html %}
       {{ content }}
     </main>
 
     {% include footer.html %}
 
+    <script src="/assets/js/menu.js"></script>
     <script src="/assets/js/prism.js"></script>
     <script src="/assets/js/search.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
